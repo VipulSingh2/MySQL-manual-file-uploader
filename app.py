@@ -11,6 +11,3 @@ def main():
     page = pages[selection]
     module = import_module(pages)
     module.main()
-    
-if __name__=="__main__":
-    main()
