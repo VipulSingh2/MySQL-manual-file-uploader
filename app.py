@@ -1,6 +1,5 @@
 import streamlit as st
 from importlib import import_module
-def main():
     pages = {
         "MySQL connector ⚙️ ": "connection",
         "Uploader 💻": "uploader",        
