@@ -10,7 +10,7 @@ def main():
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to",list(pages.keys()))
     page = pages[selection]
-    module = import_module(pages)
+    module = import_module(page)
     module.main()
     
 if __name__=="__main__":
