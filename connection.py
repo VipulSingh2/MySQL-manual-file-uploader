@@ -21,7 +21,8 @@ def main():
         connect = st.form_submit_button(label='Connect it 🤝')
         
         if connect :
-            connection = create_connection(Host,Username,Password,Database)
+            if Host and Username and Password and Database:
+                connection = create_connection(Host,Username,Password,Database)
             if connection:
                 st.session_state['connection'] = connection
                 st.write("Connected Successfully")
