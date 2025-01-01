@@ -1,3 +1,4 @@
 streamlit == 1.26.1
 pandas == 1.26.1
 mysql-connector-python == 9.1.0
+importlib == 1.0.4
