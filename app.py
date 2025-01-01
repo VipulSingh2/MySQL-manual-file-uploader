@@ -3,7 +3,7 @@ from importlib import import_module
 def main():
     pages = {
         "MySQL connector ⚙️ ": "connection",
-        "Uploader 💻": "uploader"
+        "Uploader 💻": "uploader",
         
     }
 
