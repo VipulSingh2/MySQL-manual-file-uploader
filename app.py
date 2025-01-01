@@ -1,17 +1,26 @@
 import streamlit as st
 from importlib import import_module
+
+
+def mysql_connector_page():
+    # Implement logic for MySQL database connection here
+    st.write("This is the MySQL connector page.")
+
+
+def uploader_page():
+    # Implement file upload functionality here
+    st.write("This is the Uploader page.")
+
+
 def main():
     pages = {
-        "MySQL connector ⚙️ ": "connection",
-        "Uploader 💻": "uploader",
-        
+        "MySQL Database Connection": mysql_connector_page,
+        "File Uploader": uploader_page,
     }
 
     st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("Go to",list(pages.keys()))
-    page = pages[selection]
-    module = import_module(page)
-    module.main()
-    
-if __name__=="__main__":
+    selected_page = st.sidebar.radio("Go to", list(pages.keys()))
+    selected_page()
+
+if __name__ == "__main__":
     main()
