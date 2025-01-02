@@ -17,4 +17,4 @@ def main():
         module.main()
 
 if __name__=="__main__":
-main()
+        main()
