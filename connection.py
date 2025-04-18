@@ -8,6 +8,7 @@ def create_connection(Host, Username, Password, Database):
         st.success("Connected to MySQL Database Successfully")
     except mysql.connector.Error as e:
         st.error("You have entered something wrong! 😤")
+
     
     return connection
     
