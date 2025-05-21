@@ -9,7 +9,7 @@ def create_connection(Host, Username, Password, Database):
     except mysql.connector.Error as e:
         st.error("You have entered something wrong! 😤")
 
-    
+   
     return connection
     
 def main():
